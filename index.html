@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crown</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Crown" />
+  <meta property="og:title" content="Crown 제과" />
+  <meta property="og:description" content="고객감동 실천에 앞장서는 크라운제과" />
+  <meta property="og:image" content="./images/crown_card.jpg" />
+  <meta property="og:url" content="http://www.crown.co.kr/" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="Crown" />
+  <meta property="twitter:title" content="Crown 제과" />
+  <meta property="twitter:description" content="고객감동 실천에 앞장서는 크라운제과" />
+  <meta property="twitter:image" content="./images/crown_card.jpg" />
+  <meta property="twitter:url" content="http://www.crown.co.kr/" />
+
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- GSAP & ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+
+
+  <!-- header -->
+  <header>
+    <div class="inner">
+
+      <div class="header-bar">
+        <div></div>
+        <div></div>
+      </div>
+
+      <a class="logo" href="/">
+        <img src="./images/h1_logo.gif" alt="CROWN" />
+      </a>
+
+      <div class="gnb">
+      
+        <ul class="main-menu">
+          <li class="item">
+            <div class="item__name">
+              <a href="javascript:void(0)">제품소개</a>
+            </div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul>
+                  <li><a href="javascript:void(0)">제품소개</a></li>
+                  <li><a href="javascript:void(0)">과자 이야기</a></li>
+                  <li><a href="javascript:void(0)">크라운 CF</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">
+              <a href="javascript:void(0)">이벤트</a>
+            </div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul>
+                  <li><a href="javascript:void(0)">진행중인 이벤트</a></li>
+                  <li><a href="javascript:void(0)">지난 이벤트</a></li>
+                  <li><a href="javascript:void(0)">이벤트 공지</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">
+              <a href="javascript:void(0)">인재채용</a>
+            </div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul>
+                  <li><a href="javascript:void(0)">인재상</a></li>
+                  <li><a href="javascript:void(0)">채용공고</a></li>
+                  <li><a href="javascript:void(0)">입사지원</a></li>
+                  <li><a href="javascript:void(0)">채용문의</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">
+              <a href="javascript:void(0)">고객센터</a>
+            </div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul>
+                  <li><a href="javascript:void(0)">FAQ</a></li>
+                  <li><a href="javascript:void(0)">고객의 소리</a></li>
+                  <li><a href="javascript:void(0)">Q&A</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">
+              <a href="javascript:void(0)">ESG 경영</a>
+            </div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul>
+                  <li><a href="javascript:void(0)">Overview</a></li>
+                  <li><a href="javascript:void(0)">Environmantal</a></li>
+                  <li><a href="javascript:void(0)">Social</a></li>
+                  <li><a href="javascript:void(0)">Govermance</a></li>
+                  <li><a href="javascript:void(0)">통합경영방침</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">
+              <a href="javascript:void(0)">회사소개</a>
+            </div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul>
+                  <li><a href="javascript:void(0)">회장 인사말</a></li>
+                  <li><a href="javascript:void(0)">크라운 소개</a></li>
+                  <li><a href="javascript:void(0)">네트워크</a></li>
+                  <li><a href="javascript:void(0)">공지사항</a></li>
+                  <li><a href="javascript:void(0)">오시는 길</a></li>
+                  <li><a href="javascript:void(0)">IR</a></li>
+                  <li><a href="javascript:void(0)">PR</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      
+        <div class="sub-menu">
+          <ul class="menu">
+            <li>
+              <a href="/">HOME</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">ENGLISH</a>
+            </li>
+          </ul>
+          <div class="search">
+            <input type="text" />
+            <span class="material-symbols-outlined">search</span>
+          </div>
+        </div>
+      
+      </div>
+      
+    </div>
+
+    <div class="badges">
+      <div class="badge">
+        <img src="./images/badge1.jpg" alt="이벤트" />
+      </div>
+      <div class="badge">
+        <img src="./images/badge2.jpg" alt="50주년" />
+      </div>
+    </div>
+  </header>
+
+
+  <!-- VISUAL -->
+  <section class="visual">
+    <div class="inner">
+
+      <div class="title fade-in">
+        <img src="./images/visual_title.png" alt="HAPPY BIRTHDAY 50TH ANNIVERSARY" />
+        <a href="javascript:void(0)" class="btn">자세히 보기</a>
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_ob_1.png" alt="조리퐁 멜로팝" class="ob_1" />
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_ob_2.png" alt="케이크" class="ob_2" />
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_ob_3.png" alt="꼬깔모자" class="ob_3" />
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_ob_4.png" alt="시리얼 그릇" class="ob_4" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROMOTION -->
+  <section class="promotion">
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/promotion_slide1.jpg" alt="죠리퐁 50주년 한!정!판! 시리얼 기프트 세트 출시!" />
+          <div class="promo-text">
+            <h3>죠리퐁 <span>50주년 한!정!판!</span><br />  시리얼 기프트 세트 출시!</h3>
+            <p>참여 기간 : 3월 2일 (목) ~ 3월 10일 (금)</p>
+          </div>
+          <a class="btn btn--purple" href="javascript:void(0)">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/promotion_slide2.jpg" alt="새콤달콤 스파클링 제로 출시!" />
+          <div class="promo-text">
+            <h3><span>새콤달콤 스파클링 제로</span> 출시!<br /> 제로 칼로리로 칼로리 걱정 NO!</h3>
+            <p>참여 기간 : 3월 2일 (목) ~ 3월 10일 (금)</p>
+          </div>
+          <a class="btn btn--purple" href="javascript:void(0)">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/promotion_slide3.jpg" alt="크라운제과에서 7기 대학생 서포터즈를 모집합니다" />
+          <div class="promo-text">
+            <h3>크라운제과에서 7기 <br /><span>대학생 서포터즈</span>를 모집합니다</h3>
+            <p>참여 기간 : 3월 2일 (목) ~ 3월 10일 (금)</p>
+          </div>
+          <a class="btn btn--purple" href="javascript:void(0)">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/promotion_slide4.jpg" alt="토익초콜릿 먹으면서 정답만 콕콕! 찍어서 시험 만점 한번 GABOJAGO~" />
+          <div class="promo-text">
+            <h3><span>토익초콜릿</span> 먹으면서 정답만 콕콕!<br /> 찍어서 시험 만점 한번 GABOJAGO~</h3>
+            <p>참여 기간 : 3월 2일 (목) ~ 3월 10일 (금)</p>
+          </div>
+          <a class="btn btn--purple" href="javascript:void(0)">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/promotion_slide5.jpg" alt="다시 돌아온 레트로 우체통" />
+          <div class="promo-text">
+            <h3>다시 돌아온<br /> <span>레트로 우체통</span></h3>
+            <p>참여 기간 : 3월 2일 (목) ~ 3월 10일 (금)</p>
+          </div>
+          <a href="javascript:void(0)" class="btn btn--purple">자세히 보기</a>
+        </div>
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev">
+        <div class="material-symbols-outlined">arrow_back</div>
+      </div>
+      <div class="swiper-button-next">
+        <div class="material-symbols-outlined">arrow_forward</div>
+      </div>
+    </div>
+
+  </section>
+
+  
+  <!-- SPARKLING -->
+  <section class="sparkling scroll-spy">
+    <div class="sparkling_lbg"></div>
+    <div class="sparkling_rbg"></div>
+    <div class="inner">
+
+      <img src="./images/sparkling_ob.png" alt="새콤달콤 스파클링" class="sparkling_ob back-to-position to-right delay-0" />
+
+      <div class="text-group">
+        <h2 class="back-to-position to-left delay-0">새콤달콤 스파클링 제로</h2>
+        <p class="back-to-position to-left delay-1">
+          크라운제과와 쟈뎅의 새로운 만남!<br />
+          어른이들의 인생 간식 새콤달콤이 에이드, 스파클링<br />
+          두 가지 타입의 음료로 탄생했어요
+        </p>
+        <a href="javascript:void(0)" class="btn back-to-position to-left delay-2">자세히 보기</a>
+      </div>
+
+    </div>
+  </section>
+  
+
+  <!-- MELLOPOP -->
+  <section class="mellopop scroll-spy">
+    <div class="inner">
+      
+      <div class="text-group">
+        <h2 class="back-to-position to-right delay-0">죠리퐁 멜로팝</h2>
+        <p class="back-to-position to-right delay-1">
+          퐁이야 생일축하해~<br />
+          죠리퐁 50주년 한!정!판! 시리얼 기프트 세트 출시!
+        </p>
+        <a href="javascript:void(0)" class="btn back-to-position to-right delay-2">자세히 보기</a>
+      </div>
+
+      <img src="./images/mellopop_ob.png" alt="멜로팝" class="mellopop_ob back-to-position to-left delay-0" />
+
+    </div>
+  </section>
+
+
+  <!-- PRODUCT INFO -->
+  <section class="product-info">
+
+    <div class="text-group">
+      <h2>크라운 제품소개</h2>
+      <p class="product_text">크라운의 다양한 제품을 확인해보세요!</p>
+    </div>
+    
+    <div class="inner image-area">
+      <img src="./images/product_deco_object_1.png" class="ob_1" />
+      <img src="./images/product_deco_object_2.png" class="ob_2" />
+    </div>
+
+      <ul class="infos">
+        <li class="info active"><span>비스킷</span>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/biscuit_01.png" alt="초코하임" />
+                <div class="info-text">
+                  <strong>하임</strong>
+                  <p>하임과 느끼는 로맨틱 감성여행!<br /> 얼려먹으면 더욱 맛있는 하임</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/biscuit_02.png" alt="참 크래커" />
+                <div class="info-text">
+                  <strong>참크래커</strong>
+                  <p>깔끔하고, 담백한 맛의<br /> 저칼로리 크래커</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/biscuit_03.png" alt="뽀또" />
+                <div class="info-text">
+                  <strong>뽀또</strong>
+                  <p>귀엽고 깜찍한 크래커 샌드</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/biscuit_04.png" alt="국희" />
+                <div class="info-text">
+                  <strong>국희</strong>
+                  <p>국내 유일의 땅콩쿠키샌드</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/biscuit_05.png" alt="쿠크다스" />
+                <div class="info-text">
+                  <strong>쿠크다스</strong>
+                  <p>쿠키의 명작 쿠크다스</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/biscuit_06.png" alt="산도" />
+                <div class="info-text">
+                  <strong>산도</strong>
+                  <p>국내 최초 샌드형 비스킷</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/biscuit_07.png" alt="오곡쿠키" />
+                <div class="info-text">
+                  <strong>오곡쿠키</strong>
+                  <p>다섯가지 자연이야기</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/biscuit_08.png" alt="버터와플" />
+                <div class="info-text">
+                  <strong>버터와플</strong>
+                  <p>과자의 귀족, 버터와플</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/biscuit_09.png" alt="치즈샌드" />
+                <div class="info-text">
+                  <strong>치즈샌드</strong>
+                  <p>부드러운 크래커와 치즈크림의 만남</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/biscuit_10.png" alt="그레이스" />
+                <div class="info-text">
+                  <strong>그레이스</strong>
+                  <p>Home Made Type Cookie</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+          </div>
+        </li>
+        <li class="info"><span>케이크</span>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/cake_01.png" alt="초코렐라" />
+                <div class="info-text">
+                  <strong>초코렐라</strong>
+                  <p>부드러운 순크림과 초코시트에 <br />딸기잼으로 맛을 낸 디저트 케이크</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cake_02.png" alt="쿠크다스케이크" />
+                <div class="info-text">
+                  <strong>쿠크다스케이크</strong>
+                  <p>붓세 케이크 기지에 바닐라 생크림이 <br />샌딩되어 가볍게 즐기는 조각 케이크</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cake_03.png" alt="크림블" />
+                <div class="info-text">
+                  <strong>크림블</strong>
+                  <p>생크림이 함유된 <br />고급 크림 초콜릿 파이</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cake_04.png" alt="빅파이" />
+                <div class="info-text">
+                  <strong>빅파이</strong>
+                  <p>승리를 기원하는 파이</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cake_05.png" alt="롱스" />
+                <div class="info-text">
+                  <strong>롱스</strong>
+                  <p>길다란 초코파이</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cake_06.png" alt="초코파이" />
+                <div class="info-text">
+                  <strong>쵸코파이</strong>
+                  <p>언제 어디서나 맛있는 간식</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+          </div>
+        </li>
+        <li class="info"><span>스낵</span>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/snack_01.png" alt="츄러스 시나몬애플파이" />
+                <div class="info-text">
+                  <strong>츄러스 시나몬애플파이</strong>
+                  <p>상큼한 애플파이와<br /> 향긋한 시나몬 향에 반하는 츄러스</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/snack_02.png" alt="콘씨리즈" />
+                <div class="info-text">
+                  <strong>콘씨리즈</strong>
+                  <p>바삭한 콘, 치즈와 초코 크림</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/snack_03.png" alt="카라멜콘" />
+                <div class="info-text">
+                  <strong>카라멜콘</strong>
+                  <p>고소한 땅콩과 카라멜의 만남</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/snack_04.png" alt="참쌀" />
+                <div class="info-text">
+                  <strong>참쌀</strong>
+                  <p>국내 1위 쌀과자</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/snack_05.png" alt="츄러스" />
+                <div class="info-text">
+                  <strong>츄러스</strong>
+                  <p>스페인 정통스낵</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/snack_06.png" alt="메이플콘" />
+                <div class="info-text">
+                  <strong>메이플콘</strong>
+                  <p>캐나다산 메이플시럽을 사용한 스낵</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/snack_07.png" alt="C콘칲" />
+                <div class="info-text">
+                  <strong>C콘칲</strong>
+                  <p>온가족이 즐기는 콘칲</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/snack_08.png" alt="죠리퐁" />
+                <div class="info-text">
+                  <strong>죠리퐁</strong>
+                  <p>언제나 우리곁엔 죠리퐁</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/snack_09.png" alt="못말리는 신짱" />
+                <div class="info-text">
+                  <strong>못말리는 신짱</strong>
+                  <p>달콤 고소한 우리들의 친구</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+          </div>
+        </li>
+        <li class="info"><span>캔디, 초콜릿</span>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/candy_01.png" alt="고영양바" />
+                <div class="info-text">
+                  <strong>고영양바</strong>
+                  <p>간편하고 똑똑하게 한끼</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/candy_02.png" alt="짜먹는양갱" />
+                <div class="info-text">
+                  <strong>짜먹는양갱</strong>
+                  <p>타우린 BCAA 함유되어있어 좋은<br /> 짜먹는 양갱</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/candy_03.png" alt="키커" />
+                <div class="info-text">
+                  <strong>키커</strong>
+                  <p>바삭한 기분전환</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/candy_04.png" alt="미니쉘" />
+                <div class="info-text">
+                  <strong>미니쉘</strong>
+                  <p>한 조각 보석, 미니쉘</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/candy_05.png" alt="새콤달콤" />
+                <div class="info-text">
+                  <strong>새콤달콤</strong>
+                  <p>새콤함과 달콤함이 조화로운<br /> 츄잉캔디</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/candy_06.png" alt="마이쮸" />
+                <div class="info-text">
+                  <strong>마이쮸</strong>
+                  <p>상큼하게 즐기자!<br /> 껌보다 마이쮸</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/candy_07.png" alt="땅콩카라멜" />
+                <div class="info-text">
+                  <strong>땅콩카라멜</strong>
+                  <p>땅콩맛 츄잉캔디</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/candy_08.png" alt="비단박하" />
+                <div class="info-text">
+                  <strong>비단박하</strong>
+                  <p>부드럽고 새하얀 조직의<br /> 향긋한 박하향 캔디</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+          </div>
+        </li>
+      </ul>
+
+  </section>
+
+
+  <!-- NEWS -->
+  <section class="news scroll-spy">
+    <div class="inner">
+
+      <img src="./images/news_texture_01.png" alt="texture" class="news_texture news_texture1" />
+      <img src="./images/news_texture_02.png" alt="texture" class="news_texture news_texture2" />
+      <img src="./images/news_texture_03.png" alt="texture" class="news_texture news_texture3" />
+      <img src="./images/news_texture_04.png" alt="texture" class="news_texture news_texture4" />
+      <img src="./images/img_texture01.png" alt="texture" class="news_texture news_texture5" />
+      <img src="./images/img_texture02.png" alt="texture" class="news_texture news_texture6" />
+
+      <div class="social">
+        <img src="./images/social_ob_01.jpg" alt="희망과자 프로젝트" class="news_object social_ob1 back-to-position to-right delay-0" />
+        <img src="./images/social_ob_02.jpg" alt="아동 청소년 지원" class="news_object social_ob2 back-to-position to-right delay-1" />
+        <img src="./images/social_ob_03.jpg" alt="문화예술지원" class="news_object social_ob3 back-to-position to-right delay-2" />
+        <img src="./images/social_texture01.png" alt="texture" class="social_texture1 back-to-position to-left delay-0">
+        <div class="text-group">
+          <h2 class="back-to-position to-left delay-1">
+            모두의<br />
+            <span>참 행복</span>을 실천하는 기업
+          </h2>
+          <p class="back-to-position to-left delay-2">
+            희망과자 프로젝트, 아동/청소년 지원, 문화예술지원 등<br />
+            창업정신이 담긴 크라운의 사회활동을 응원해주세요.
+          </p>
+          <a href="javascript:void(0)" class="btn btn--darkgray back-to-position to-left delay-3">자세히 보기</a>
+        </div>
+      </div>
+
+      <div class="instagram">
+        <div class="text-group">
+          <h2 class="back-to-position to-right delay-0">
+            신제품 출시, 이벤트 등 가장 빠른 소식은<br />
+            <span>크라운 인스타그램</span>에서 확인 가능합니다!
+          </h2>
+          <a href="javascript:void(0)" class="btn btn--darkgray back-to-position to-right delay-1">바로 가기</a>
+        </div>
+        <img src="./images/instagram_ob.png" alt="인스타그램" class="news_object instagram_ob back-to-position to-left delay-0" />
+        <img src="./images/img_balloon01.png" alt="texture" class="instagram_texture1 floating1" />
+        <img src="./images/img_balloon02.png" alt="texture" class="instagram_texture2 floating2" />
+      </div>
+  
+    </div>
+  </section>
+
+
+  <footer>
+
+      <div class="footer-menu">
+        <div class="inner">
+      
+          <div class="menu">
+            <a href="javascript:void(0)">회사소개</a>
+            <a href="javascript:void(0)" class="orange">개인정보처리방침</a>
+            <a href="javascript:void(0)">이메일무단수집거부</a>
+            <a href="javascript:void(0)">사이트맵</a>
+          </div>
+          <div class="sns">
+            <a href="https://www.facebook.com/CrownConf" target="_blank"><img src="./images/btn_facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/crownsns/" target="_blank"><img src="./images/btn_instagram.png" alt="instagram"></a>
+            <a href="https://blog.naver.com/crownoffcial" target="_blank"><img src="./images/btn_blog.png" alt="naverblog"></a>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="footer-info">
+        <div class="inner">
+      
+          <a href="/" class="footer-logo"><img src="./images/footer_logo.png" alt="logo" /></a>
+          <div class="text-group">
+            <p>㈜크라운제과<span class="line"></span>서울시 용산구 한강대로72길 3<span class="line"></span>Tel : 02-791-9133<span
+                class="line"></span>Fax : 02-791-9119</p>
+            <p>대표이사 : 윤석빈 사업자등록번호 : 411-87-00569</p>
+            <p>COPYRIGHT &copy; <span class="this-year"></span> CROWN ALL RIGHTS RESERVED.</p>
+          </div>
+      
+          <select onchange="if(this.value) window.open(this.value);">
+            <option value="" selected disabled>FAMILY SITE</option>
+            <option value="https://www.facebook.com/CrownConf/">크라운제과페이스북</option>
+            <option value="http://www.ht.co.kr/">해태제과식품</option>
+            <option value="http://www.ch-academy.co.kr/home/index.php">크라운해태연수원</option>
+            <option value="http://www.art-block.co.kr/">아트블럭</option>
+            <option value="http://www.chitv.co.kr/">CHITV</option>
+          </select>
+      
+        </div>
+      </div>
+
+  </footer>
+
+
+  <div id="to-top">
+    <div class="material-symbols-outlined">arrow_drop_up</div>
+  </div>
+
+  
+</body>
+</html>
