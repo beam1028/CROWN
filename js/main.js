@@ -34,25 +34,6 @@ toTopEl.addEventListener('click', function () {
 })
 
 
-// 사이드메뉴 검색 바
-const searchEl = document.querySelector('.search')
-const searchInputEl = searchEl.querySelector('input')
-
-searchEl.addEventListener('click', function () {
-  searchInputEl.focus ()
-})
-
-searchInputEl.addEventListener('focus', function () {
-  searchEl.classList.add('focused')
-  searchInputEl.setAttribute('placeholder', '통합검색')
-})
-
-searchInputEl.addEventListener('blur', function () {
-  searchEl.classList.remove('focused')
-  searchInputEl.setAttribute('placeholder', '')
-})
-
-
 //비주얼 애니메이션
 const fadeEls = document.querySelectorAll('.visual .fade-in')
 fadeEls.forEach(function (fadeEl, index) {
@@ -147,8 +128,3 @@ function floatingObject(selector, delay, size) {
 }
 floatingObject('.floating1', 1, 10)
 floatingObject('.floating2', .5, 20)
-
-
-// 카피라이트 날짜
-const thisYear = document.querySelector('.this-year')
-thisYear.textContent = new Date().getFullYear() //20nn
